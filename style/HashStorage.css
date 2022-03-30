@@ -1,0 +1,49 @@
+.body{
+
+}
+.navBut{
+    width: 100px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.but{
+    font-size: 17px;
+    padding: 10px 25px;
+
+
+}
+.deleteBut{
+
+    font-size: 17px;
+    padding: 10px 25px;
+
+}
+.recipeBut{
+
+    font-size: 17px;
+    padding: 10px 25px;
+}
+.viewBut{
+
+    font-size: 17px;
+    padding: 10px 25px;
+}
+
+.allCocktails{
+    margin-top: 40px;
+    width: 200px;
+
+}
+.recipe{
+    width: 130px;
+    margin-top: 40px;
+}
+
+.all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
