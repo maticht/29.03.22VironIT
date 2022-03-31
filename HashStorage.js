@@ -16,7 +16,7 @@ class HashStorage {
     }
 }
 
-function addButton(){
+function addBut(){
     let name = window.prompt('Напишите название коктейля')
     let alcoholism = window.prompt('Он алкогольный?')
     let list = window.prompt('Какие ингридиенты?')
@@ -27,7 +27,7 @@ function addButton(){
     alert(`Вы добавили рецепт напитка\n${stringCocktailObj}`)
 }
 
-function deleteButton(){
+function deleteBut(){
     const name = window.prompt('Удалить коктейль');
     let stringCocktailObj = JSON.stringify(cocktailStorage.getValue(name));
     stringCocktailObj = stringCocktailObj.replace(/,/g,'').replace(/""/g,'\n').replace(/{/g,'').replace(/}/g,'').replace(/"/g,' ')
@@ -35,7 +35,7 @@ function deleteButton(){
     cocktailStorage.deleteValue(name)
 }
 
-function recipeButton(){
+function recipeBut(){
     const name = window.prompt('Получить рецепт напитка...')
     let stringCocktailObj = JSON.stringify(cocktailStorage.getValue(name));
     stringCocktailObj = stringCocktailObj.replace(/,/g,'').replace(/""/g,'\n').replace(/{/g,'').replace(/}/g,'').replace(/"/g,' ')
@@ -44,7 +44,7 @@ function recipeButton(){
     recipe.appendChild(strRecipe)
 }
 
-function viewButton(){
+function viewAllBut(){
     let stringCocktailObj = JSON.stringify(cocktailStorage.getKeys());
     stringCocktailObj = stringCocktailObj.replace(/,/g,'').replace(/""/g,'\n').replace(/{/g,'').replace(/[\[]/g,'').replace(/[\]]/g,'').replace(/}/g,'').replace(/"/g,' ')
     const allCocktails = document.getElementById("allCocktails");
